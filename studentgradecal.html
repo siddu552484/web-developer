@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Grade Calculator</title>
+</head>
+<body>
+    <div >
+    <h1>Enter marks</h1>
+    <input id="grade" type="number"/>
+    <button onclick="calculateGrade()">check grade</button>
+    <h3 id="results"></h3>
+    </div>
+    <script>
+        function calculateGrade(){
+            let marks=document.getElementById("grade").value;
+            let results="";
+
+            if (marks > 90){
+                document.write("Grade-1")
+            }else if(marks >80){
+                document.write("Grade-2")
+            }else if(marks > 70){
+                document.write("Grade-3")
+            }else{
+                document.write("fail")
+            }
+            document.getElementById("results").innerText= results;
+        }
+    </script>
+
+    
+</body>
+</html>
